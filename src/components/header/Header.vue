@@ -18,7 +18,7 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-    name: 'header',
+    name: 'Header',
     computed: {
         ...mapState(['isLogin','messageCount'])
     },

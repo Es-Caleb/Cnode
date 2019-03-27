@@ -1,29 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div id="xiejiahe">
+		<div class="progress" :class="{actve: start, end: end}">
+			<div class="rotate-loading"></div>
+			<div class="progress-forward"></div>
+		</div>
+		<div class="go-top user-select-none" @click="goTop">
+			<p>回</p>
+			<p>顶</p>
+			<p>部</p>
+		</div>
+		<div class="router-view">
+			<Header />
+			<keep-alive exclude="User,Collections,Messages,Release">
+			  <router-view />
+			</keep-alive>
+			<Footer />
+		</div>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Footer,
+  },
+  data() {
+    return {
+
     }
+  },
+  created() {
+
+  },
+  methods: {
+
   }
 }
-</style>
+</script>
