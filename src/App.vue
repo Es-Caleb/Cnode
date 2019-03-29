@@ -1,5 +1,5 @@
 <template>
-  <div id="xiejiahe">
+  <div id="app">
 		<div class="progress" :class="{actve: start, end: end}">
 			<div class="rotate-loading"></div>
 			<div class="progress-forward"></div>
