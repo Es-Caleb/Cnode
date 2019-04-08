@@ -1,19 +1,23 @@
 <template>
     <section class="not-match user-select-none">
         <div>
-            <img src="@/assets/images/not-match.gif" alt="未匹配" class="pointer-events-none" />
-            <div class="page-text">卧槽！页面不见了！</div>
-            <div class="go">
-                <router-link to="/">首页</router-link>
-            </div>
+        <img
+            src="@/assets/images/not-match.gif"
+            alt="未匹配"
+            class="pointer-events-none"
+        />
+        <div class="page-text">卧槽！页面不见了！</div>
+        <div class="go">
+            <router-link to="/">首页</router-link>
+        </div>
         </div>
     </section>
 </template>
 
 <script>
-export default {
-    name: 'NotMatch'
-}
+    export default {
+        name: "NotMatch"
+    };
 </script>
 
 <style lang="scss">
