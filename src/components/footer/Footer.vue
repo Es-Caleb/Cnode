@@ -19,7 +19,7 @@
             <li class="cnode">
                 <span>github-pages提供网站托管</span>
                 <a href="https://github.com/">
-                <img src="/src/assets/images/github.svg" alt="github" />
+                <img src="http://vue-cnode.xiejiahe.com/img/github.131c9e89.svg" alt="github" />
                 </a>
             </li>
             </ul>

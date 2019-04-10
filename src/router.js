@@ -14,6 +14,21 @@ export default new Router({
       name: 'Login',
       path: '/login',
       component: () => import('@/views/login/Login'),
+    },
+    {
+      name: 'User',
+      path: '/user/:loginname',
+      component: () => import('@/views/user/User'),
+    },
+    {
+      name: 'Collections',
+      path: '/user/:loginname/collections',
+      component: () => import("@/views/collections/Collections"),
+    },
+    {
+      name: 'NotMatch',
+			path: '*',
+			component: () => import('@/views/404/404'),
     }
   ]
 });
