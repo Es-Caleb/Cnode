@@ -23,7 +23,12 @@ export default new Router({
     {
       name: 'Collections',
       path: '/user/:loginname/collections',
-      component: () => import("@/views/collections/Collections"),
+      component: () => import('@/views/collections/Collections'),
+    },
+    {
+      name: 'Messages',
+      path: '/messages',
+      component: () => import('@/views/messages/Messages'),
     },
     {
       name: 'NotMatch',
