@@ -36,6 +36,11 @@ export default new Router({
       component: () => import("@/views/release/Release")
     },
     {
+      name: "Topic",
+      path: "/topic/:id",
+      component: () => import("@/views/topic/Topic")
+    },
+    {
       name: "NotMatch", //404
       path: "*",
       component: () => import("@/views/404/404")
