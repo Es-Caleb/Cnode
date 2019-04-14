@@ -36,7 +36,7 @@ export default new Router({
       component: () => import("@/views/release/Release")
     },
     {
-      name: "Topic",
+      name: "Topic", //话题详情
       path: "/topic/:id",
       component: () => import("@/views/topic/Topic")
     },
